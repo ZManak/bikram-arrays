@@ -111,4 +111,34 @@ function esPar(num){
 function resta(a, b){
     return a - b;
 }
-const arrayFunciones = [suma(a, b), resta(a, b), ]
+arrayFunciones = [suma, resta, multiplicacion];
+
+//23
+function ordenarArray2(arr){
+    return arr.sort(function(a, b){
+        return b - a;
+    });
+}
+
+//24
+function obtenerImpares(arr){
+    return arr.filter(number => number % 2 !== 0);
+}
+
+//25
+function sumarArray(arr){
+    let sumaTotal = 0;
+    for (let i = 0; i < arr.length; i++){
+        sumaTotal += arr[i];
+    }
+    return sumaTotal;
+}
+
+//26
+function multiplicarArray(arr){
+    let multiTotal = 1;
+    for (let i = 0; i < arr.length; i++){
+        multiTotal *= arr[i];
+    }
+    return multiTotal;
+}
